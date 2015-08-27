@@ -9,7 +9,7 @@ use pyramid::system::*;
 
 fn main() {
 
-    let path = Path::new("../examples/basic/test.pml");
+    let path = Path::new("../examples/test.pml");
     let doc = Document::from_file(path);
     let mut system = System::new();
     system.add_subsystem(Box::new(pyramid_animation::AnimationSubSystem::new()));
