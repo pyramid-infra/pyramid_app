@@ -12,3 +12,6 @@ path = "../pyramid_animation"
 
 [dependencies.pyramid_viewport]
 path = "../pyramid_viewport"
+
+[dependencies.pyramid_template]
+path = "../pyramid_template"
