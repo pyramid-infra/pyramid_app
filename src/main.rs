@@ -18,8 +18,8 @@ fn main() {
     let doc = Document::from_file(path);
     let root_path = path.parent().unwrap().to_path_buf();
     let mut system = System::new();
-    system.add_subsystem(Box::new(pyramid_template::TemplateSubSystem::new(root_path.clone())));
     system.add_subsystem(Box::new(pyramid_legacy_directx_x_loader::LegacyDirectXXSubSystem::new(root_path.clone())));
+    system.add_subsystem(Box::new(pyramid_template::TemplateSubSystem::new(root_path.clone())));
     system.add_subsystem(Box::new(pyramid_animation::AnimationSubSystem::new()));
     system.add_subsystem(Box::new(pyramid_transform::TransformSubSystem::new()));
     system.add_subsystem(Box::new(pyramid_viewport::ViewportSubSystem::new(root_path.clone())));
