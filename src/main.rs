@@ -15,7 +15,7 @@ use pyramid::system::*;
 fn main() {
 
     let path = Path::new("../examples/levela/map.pml");
-    let doc = Document::from_file(path);
+    let doc = Document::from_file(path).unwrap();
     let root_path = path.parent().unwrap().to_path_buf();
     let mut system = System::new();
     system.add_subsystem(Box::new(pyramid_legacy_directx_x_loader::LegacyDirectXXSubSystem::new(root_path.clone())));
