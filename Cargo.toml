@@ -16,8 +16,8 @@ path = "../pyramid_viewport"
 [dependencies.pyramid_template]
 path = "../pyramid_template"
 
-[dependencies.pyramid_legacy_directx_x_loader]
-path = "../pyramid_legacy_directx_x_loader"
+[dependencies.pyramid_legacy_dotx_loader]
+path = "../pyramid_legacy_dotx_loader"
 
 [dependencies.pyramid_transform]
 path = "../pyramid_transform"

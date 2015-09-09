@@ -4,7 +4,7 @@ version = "0.1.0"
 dependencies = [
  "pyramid 0.1.0",
  "pyramid_animation 0.1.0",
- "pyramid_legacy_directx_x_loader 0.1.0",
+ "pyramid_legacy_dotx_loader 0.1.0",
  "pyramid_template 0.1.0",
  "pyramid_transform 0.1.0",
  "pyramid_viewport 0.1.0",
@@ -361,7 +361,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "pyramid_legacy_directx_x_loader"
+name = "pyramid_legacy_dotx_loader"
 version = "0.1.0"
 dependencies = [
  "peg 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
