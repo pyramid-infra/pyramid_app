@@ -2,7 +2,7 @@ extern crate pyramid;
 extern crate pyramid_animation;
 extern crate pyramid_viewport;
 extern crate pyramid_template;
-extern crate pyramid_asset3d;
+extern crate pyramid_subdoc;
 extern crate pyramid_transform;
 
 use std::path::Path;
@@ -14,10 +14,10 @@ use pyramid::system::*;
 
 fn main() {
 
-    let path = Path::new("../examples/levela/map.pml");
+    let path = Path::new("../examples/test.pml");
     let root_path = path.parent().unwrap().to_path_buf();
     let mut system = System::new();
-    system.add_subsystem(Box::new(pyramid_asset3d::Asset3dSubSystem::new(root_path.clone())));
+    system.add_subsystem(Box::new(pyramid_subdoc::SubdocSubSystem::new(root_path.clone())));
     system.add_subsystem(Box::new(pyramid_template::TemplateSubSystem::new(root_path.clone())));
     system.add_subsystem(Box::new(pyramid_animation::AnimationSubSystem::new()));
     system.add_subsystem(Box::new(pyramid_transform::TransformSubSystem::new()));

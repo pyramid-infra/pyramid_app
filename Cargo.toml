@@ -16,8 +16,8 @@ path = "../pyramid_viewport"
 [dependencies.pyramid_template]
 path = "../pyramid_template"
 
-[dependencies.pyramid_asset3d]
-path = "../pyramid_asset3d"
+[dependencies.pyramid_subdoc]
+path = "../pyramid_subdoc"
 
 [dependencies.pyramid_transform]
 path = "../pyramid_transform"
